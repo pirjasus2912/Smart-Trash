@@ -84,7 +84,7 @@ background-position: center;
 
 
 .hero h1 {
-  color: #000000; /* ganti dengan warna yang kontras dengan background */
+  color: #090909; /* ganti dengan warna yang kontras dengan background */
   font-size: 3em;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* supaya tetap terbaca di atas gambar */
 }
