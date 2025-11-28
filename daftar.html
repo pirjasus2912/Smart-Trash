@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="id">
-     <script src="daftar.js"></script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +8,16 @@
 </head>
 <body>
   <div class="container">
-    <!-- Kiri: Ilustrasi -->
     <div class="left-panel">
       <h1>Gabung Bank Sampah</h1>
       <p>Daftar sekarang dan mulai kelola sampah jadi manfaat 🌿</p>
       <img src="images/sampahimut.png" alt="Ilustrasi tanaman">
     </div>
 
-    <!-- Kanan: Form Daftar -->
     <div class="right-panel">
       <div class="form-box">
         <h2>Buat Akun Baru</h2>
-        <form>
+        <form id="signupForm">
           <label for="nama">Nama Lengkap</label>
           <input type="text" id="nama" placeholder="Contoh: Olivia">
 
@@ -31,10 +28,10 @@
           <input type="email" id="email" placeholder="Olivia@email.com">
 
           <label for="password">Password</label>
-          <input type="password" id="password" placeholder="••••••••">
+          <input type="password" id="password" placeholder>
 
-   <div id="signupError" class="error-message"></div>
-  <button type="submit">Daftar</button>
+          <div id="signupError" class="error-message"></div>
+          <button type="submit">Daftar</button>
         </form>
 
         <div class="links">
@@ -44,5 +41,7 @@
       </div>
     </div>
   </div>
+
+  <script src="daftar.js" defer></script>
 </body>
 </html>

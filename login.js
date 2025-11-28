@@ -1,29 +1,40 @@
-function validateLogin() {
-  const username = document.getElementById("username").value.trim();
-  const password = document.getElementById("password").value.trim();
-  const errorBox = document.getElementById("loginError");
+// login.js
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("loginForm");
+  const err = document.getElementById("loginError");
 
-  const akunTerdaftar = {
-    username: "firza123",
-    password: "sampahku"
-  };
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    err.textContent = "";
 
-  if (username !== akunTerdaftar.username && password !== akunTerdaftar.password) {
-    errorBox.textContent = "Email dan password salah";
-    return false;
-  }
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value;
 
-  if (username !== akunTerdaftar.username) {
-    errorBox.textContent = "Email salah";
-    return false;
-  }
+    if (!username || !password) {
+      err.textContent = "Username dan password wajib diisi.";
+      return;
+    }
 
-  if (password !== akunTerdaftar.password) {
-    errorBox.textContent = "Password salah";
-    return false;
-  }
+    // Ambil daftar pengguna dari localStorage
+    const users = JSON.parse(localStorage.getItem("users") || "[]");
+    const match = users.find(u => (u.username === username || u.email === username) && u.password === password);
 
-  errorBox.textContent = "";
-  alert("Login berhasil!");
-  return true;
+    if (!match) {
+      err.textContent = "Username/email atau password tidak cocok.";
+      return;
+    }
+
+    // di login.js, dalam DOMContentLoaded
+const signupFlag = localStorage.getItem("signupSuccess");
+if (signupFlag === "1") {
+  document.getElementById("loginError").textContent = "Pendaftaran berhasil. Silakan login.";
+  localStorage.removeItem("signupSuccess");
 }
+
+    // Simpan sesi sederhana (opsional)
+    localStorage.setItem("currentUser", JSON.stringify({ username: match.username, email: match.email }));
+
+    // Redirect setelah login
+    window.location.href = "index.html";
+  });
+});

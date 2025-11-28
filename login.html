@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="id">
-<script src="login.js"></script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,40 +8,36 @@
 </head>
 <body>
   <div class="container">
-    <!-- Kiri: Ilustrasi -->
     <div class="left-panel">
       <h1>Selamat Datang di Bank Sampah</h1>
       <p>Satu tempat untuk mengelola dan menukar sampah jadi manfaat 🌿</p>
       <img src="images/sampahimut.png" alt="Ilustrasi tanaman">
     </div>
 
-    <!-- Kanan: Form Login -->
-    <div id="loginError" class="error-message"></div>
-<div class="right-panel">
-  <div class="form-box">
-    <h2>Masuk ke Akun Anda</h2>
-    <form onsubmit="return validateLogin()">
-      <label for="username">Username</label>
-      <input type="text" id="username" placeholder="Contoh: abdul123">
+    <div class="right-panel">
+      <div class="form-box">
+        <h2>Masuk ke Akun Anda</h2>
+        <form id="loginForm">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Contoh: abdul123">
 
-      <label for="password">Password</label>
-      <input type="password" id="password" placeholder="••••••••">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder>
 
-      <div id="loginError" class="error-message"></div>
+          <div id="loginError" class="error-message"></div>
 
-      <button type="submit">Login</button>
-    </form>
+          <button type="submit">Login</button>
+        </form>
 
-    <div class="links">
-      <a href="forgot.html">Lupa Password?</a>
-      <a href="daftar.html">Belum punya akun? Daftar</a>
-      <a href="index.html"> Kembali ke Beranda</a>
-    </div>
-  </div>
-</div>
-
+        <div class="links">
+          <a href="forgot.html">Lupa Password?</a>
+          <a href="daftar.html">Belum punya akun? Daftar</a>
+          <a href="index.html">Kembali ke Beranda</a>
+        </div>
       </div>
     </div>
   </div>
+
+  <script src="login.js" defer></script>
 </body>
 </html>
