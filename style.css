@@ -229,8 +229,9 @@ nav ul li a.active {
 
 section {
   padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
 h1, h2 {
