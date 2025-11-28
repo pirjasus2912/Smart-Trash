@@ -62,7 +62,7 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   padding: 100px 20px;
   text-align: center;
-  color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .hero {
@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 
 .hero h1 {
-  color: #ffffff; /* ganti dengan warna yang kontras dengan background */
+  color: #000000; /* ganti dengan warna yang kontras dengan background */
   font-size: 3em;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* supaya tetap terbaca di atas gambar */
 }
