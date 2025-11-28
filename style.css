@@ -68,10 +68,10 @@ nav ul li a:hover {
 .hero {
   width: 100vw;
   height: 100vh;
-  background-image: url('images/reduce.jpeg'); /* ganti dengan gambar kamu */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url('images/Guy_picks_up_trash.png'); /* ganti dengan gambar kamu */
+background-size: 60%;
+background-repeat: no-repeat;
+background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,14 +84,14 @@ nav ul li a:hover {
 
 
 .hero h1 {
-  color: #7f7b7b; /* ganti dengan warna yang kontras dengan background */
+  color: #000000; /* ganti dengan warna yang kontras dengan background */
   font-size: 3em;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* supaya tetap terbaca di atas gambar */
 }
 
 
 .hero p {
-  color:  #6c6464;
+  color:  #000000;
   font-size: 1.2em;
   margin-bottom: 25px;
 }
