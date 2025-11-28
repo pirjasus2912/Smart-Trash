@@ -84,14 +84,14 @@ nav ul li a:hover {
 
 
 .hero h1 {
-  color: #3c3c3c; /* ganti dengan warna yang kontras dengan background */
+  color: #ffffff; /* ganti dengan warna yang kontras dengan background */
   font-size: 3em;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* supaya tetap terbaca di atas gambar */
 }
 
 
 .hero p {
-  color:  #000000;
+  color:  #ffffff;
   font-size: 1.2em;
   margin-bottom: 25px;
 }
