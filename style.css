@@ -62,13 +62,13 @@ nav ul li a:hover {
   background-repeat: no-repeat;
   padding: 100px 20px;
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .hero {
   width: 100vw;
   height: 100vh;
-  background-image: url('images/bank_sampah.jpeg'); /* ganti dengan gambar kamu */
+  background-image: url('images/reduce.jpeg'); /* ganti dengan gambar kamu */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 0 20px;
   box-sizing: border-box;
@@ -84,14 +84,14 @@ nav ul li a:hover {
 
 
 .hero h1 {
-  color: #ffffff; /* ganti dengan warna yang kontras dengan background */
+  color: #3c3c3c; /* ganti dengan warna yang kontras dengan background */
   font-size: 3em;
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* supaya tetap terbaca di atas gambar */
 }
 
 
 .hero p {
-  color:  #ffffff;
+  color:  #000000;
   font-size: 1.2em;
   margin-bottom: 25px;
 }
